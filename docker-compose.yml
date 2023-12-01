@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  os-buildenv:
+    build:
+      context: ./
+      dockerfile: buildenv/Dockerfile
+    volumes:
+      - "./:/root/env"
